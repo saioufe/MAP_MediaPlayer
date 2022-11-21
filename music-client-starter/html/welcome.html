@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.3/plyr.css" integrity="sha512-VhUW1MevAGHiK4eUQ30YKfhEOSKerSjHhS36HVbs2hXvfg5SnyOqESk3BbrH4887ABFO3/rVApfIvLKf1AmLxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito:300,400'><link rel="stylesheet" href="../css/style.css">
+    <title>Music App | Welcome</title>
+    <script type="text/javascript" src="https://unpkg.com/plyr@3.6.12/dist/plyr.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5media/1.1.8/html5media.min.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+            crossorigin="anonymous"></script>
+    <script src="../scripts/player.js"></script>
+</head>
+<body>
+    Welcome, <span id="username"></span>
+    <button id="logoutBtn">Logout</button>
+    <form>
+        <label for="search">Song Search</label><br>
+        <input type="text" id="search" name="search..."><br>
+    </form>
+    <div class="container">
+        <div class="column add-bottom">
+            <div id="mainwrap">
+                <div id="nowPlay">
+                    <span id="npAction">Paused...</span><span id="npTitle"></span>
+                </div>
+                <div id="audiowrap">
+
+                    <div id="audio0">
+                        <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
+                    </div>
+
+                    <div id="tracks">
+                        <a id="btnPrev">&larr;</a><a id="btnNext">&rarr;</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Songs you may interested in</h4>
+                </div>
+                <div id="plwrap">
+                    <ul id="plList"></ul>
+                </div>
+
+                <div>
+                    <h4>Your Playlist</h4>
+                </div>
+                <div id="plwrap2">
+                    <ul id="plList2"></ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
