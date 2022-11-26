@@ -146,6 +146,7 @@ function loadDataPlayLists(songs) {
                         <button class="pladd" id="removetoplaylist" data-id = "'+value.id+ '" data-number="' + value.songId + '">-</button> \
                     </div> \
                 </li>');
+
                 }),
                 trackCount = songs.length,
                 npAction = $('#npAction'),
